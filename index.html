@@ -3439,6 +3439,37 @@
   }
 </style>
 
+<style id="swimtrain-venues">
+  .venues-section{background:linear-gradient(180deg,#fff,#f8feff)}
+  .venue-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .venue-card{
+    position:relative;overflow:hidden;display:flex;flex-direction:column;
+    padding:26px;border-radius:25px;border:1px solid var(--line)
+  }
+  .venue-card::after{
+    content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-75px;bottom:-90px;
+    border:28px solid rgba(255,255,255,.22);pointer-events:none
+  }
+  .venue-aqua{background:linear-gradient(135deg,#e9fdff,#bff7f8)}
+  .venue-pink{background:linear-gradient(135deg,#fff0fb,#ffd6f4)}
+  .venue-blue{background:linear-gradient(135deg,#f2fbff,#cdeefa)}
+  .venue-area{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  .venue-aqua .venue-area{color:#078b99}
+  .venue-pink .venue-area{color:#bd229a}
+  .venue-blue .venue-area{color:#0a7fa0}
+  .venue-card h3{margin:12px 0 6px;font-size:26px;line-height:1.1;letter-spacing:-.045em;font-weight:800}
+  .venue-address{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+  .venue-times{display:grid;gap:0;margin:20px 0 24px;padding:0;list-style:none}
+  .venue-times li{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid rgba(16,19,28,.09);font-size:14px}
+  .venue-times strong{font-weight:700}
+  .venue-times span{color:#4b5260;text-align:right}
+  .venue-card .btn{position:relative;z-index:1;margin-top:auto;align-self:flex-start;min-height:50px;padding:0 24px;font-size:13px}
+  @media(max-width:900px){
+    .venue-grid{grid-template-columns:1fr}
+    .venue-card .btn{align-self:stretch}
+  }
+</style>
+
 </head>
 
 <body>
@@ -3969,6 +4000,40 @@
             <span><b>⌖</b> Boxmoor, Hemel Hempstead, HP1 1RP</span>
             <a href="https://www.google.com/maps/search/?api=1&query=Boxmoor%2C%20Hemel%20Hempstead%20HP1%201RP" target="_blank" rel="noopener">Get directions</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section venues-section" id="venues">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <span class="kicker">Where we teach</span>
+          <h2>Lessons in <span class="pink">three places.</span></h2>
+          <p>Swimtrain now teaches at three venues. Each one has the same small groups and focused teaching, so choose the place and the time that fit your week, then message to check a space.</p>
+        </div>
+
+        <div class="venue-grid">
+          <article class="venue-card venue-aqua reveal">
+            <span class="venue-area">Hemel Hempstead</span>
+            <h3>Boxmoor</h3>
+            <p class="venue-address">Private heated pool, Boxmoor, Hemel Hempstead, HP1 1RP</p>
+            <ul class="venue-times"><li><strong>Friday to Monday</strong><span>From 8:00am</span></li></ul>
+            <a class="btn btn-pink" href="https://wa.me/447364123477?text=Hi%20Swimtrain%2C%20I%27d%20like%20to%20ask%20about%20swimming%20lessons%20at%20Boxmoor." target="_blank" rel="noopener">Book / Enquire</a>
+          </article>
+          <article class="venue-card venue-pink reveal">
+            <span class="venue-area">Hertfordshire</span>
+            <h3>Radlett</h3>
+            <p class="venue-address">Full address sent when you book</p>
+            <ul class="venue-times"><li><strong>Wednesday</strong><span>Afternoons</span></li></ul>
+            <a class="btn btn-pink" href="https://wa.me/447364123477?text=Hi%20Swimtrain%2C%20I%27d%20like%20to%20ask%20about%20swimming%20lessons%20at%20Radlett." target="_blank" rel="noopener">Book / Enquire</a>
+          </article>
+          <article class="venue-card venue-blue reveal">
+            <span class="venue-area">Cambridgeshire</span>
+            <h3>Shepreth</h3>
+            <p class="venue-address">Full address sent when you book</p>
+            <ul class="venue-times"><li><strong>Every day</strong><span>Mornings</span></li><li><strong>Monday and Tuesday</strong><span>Evenings</span></li></ul>
+            <a class="btn btn-pink" href="https://wa.me/447364123477?text=Hi%20Swimtrain%2C%20I%27d%20like%20to%20ask%20about%20swimming%20lessons%20at%20Shepreth." target="_blank" rel="noopener">Book / Enquire</a>
+          </article>
         </div>
       </div>
     </section>
